@@ -1,4 +1,4 @@
-; Windows 10 x64 Token Stealing Payload
+; Windows 10 RS2 x64 Token Stealing Payload
 ; Author Connor McGarr
 
 [BITS 64]
